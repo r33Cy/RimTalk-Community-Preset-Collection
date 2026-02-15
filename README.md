@@ -43,6 +43,7 @@ We love new presets! To add yours to the collection:
 1. **Fork/Check out** this repository.
 2. **Create a folder** under `/presets/` named after your username or alias.
 3. **Add your exported JSON** file to that folder.
+4. **Add a plain text file of your preset** file to that folder, so others can read the ruleset easily.
 4. **Include a README.md** in your folder using the template provided in `/templates/CONTRIBUTOR_README.md`.
 5. **Create a Pull Request** with a brief description of what your preset does.
 
@@ -52,5 +53,6 @@ We love new presets! To add yours to the collection:
 presets/
 ├── your-username/
 │   ├── cool-preset.json
+    ├── cool-preset.txt
 │   └── README.md
 ```
