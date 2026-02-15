@@ -47,22 +47,16 @@ Faction: {{p.faction }}
 {{- end }}
 
 # {{ p.name }}'s Current Activity:
-{{ ctx.DialogueStatus | string.split nl | array.first }}
+{{ pawn.job | string.capitalize }}
 
 # {{ p.name }}'s Inventory:
-{{~ 
-  inventory_list = p.d_inventory | StripFormattingTags | string.split nl | array.offset 1 
-~}}
-{{~ if inventory_list.size > 0 ~}}
-  {{- for line in inventory_list }}
-    {{- if line | string.strip != "" -}}
-- {{ line | string.strip }}
-    {{- end -}}
-  {{- end -}}
+{{~ if p.inventory.innerContainer.Count > 0 ~}}
+{{- for line in p.inventory.innerContainer -}}
+{{ line.LabelCap | StripFormattingTags }}
+{{ end -}}
 {{~ else ~}}
 - (no items held)
-
-{{~ end -}}
+{{~ end ~}}
 
 # {{ p.name }}'s Needs:
 Mood: {{ p.needs.mood.MoodString }}
