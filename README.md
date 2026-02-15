@@ -53,6 +53,6 @@ We love new presets! To add yours to the collection:
 presets/
 ├── your-username/
 │   ├── cool-preset.json
-    ├── cool-preset.txt
+│   ├── cool-preset.txt
 │   └── README.md
 ```
