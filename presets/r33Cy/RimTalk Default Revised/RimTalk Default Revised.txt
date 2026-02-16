@@ -46,7 +46,7 @@ Faction: {{p.faction }}
 {{- end }}
 
 # {{ p.name }}'s Current Activity:
-{{ p.job | string.capitalize | StripFormattingTags }}
+{{ pawn.job | string.capitalize }}
 
 # {{ p.name }}'s Inventory:
 {{~ if p.inventory.innerContainer.Count > 0 ~}}
