@@ -44,8 +44,10 @@ The **Medieval Fantasy** preset is a high-fidelity "Scene Director" for RimWorld
 *These are not necessary for the preset to function but my current settings that work well for me.*
 
 ### AI Model & Provider
-* **Preferred Model:** DeepSeek-R1-Distill-Qwen-32B-GGUF
+* **Model:** DeepSeek-R1-Distill-Qwen-32B-GGUF
 * **Provider/API:** LlamaCpp (Local)
+
+The listed model is an example that works well with this preset but requires high-end hardware for local inference (preferably a GPU with at least **32 GB of VRAM** if running both the model and game on the same system). Users are free to choose any model and should select a size that matches their available VRAM to ensure smooth performance.
 
 ### AI Settings Tips
 * **Logic & Creativity:**
